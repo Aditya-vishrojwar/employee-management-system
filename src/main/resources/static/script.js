@@ -12,7 +12,7 @@ async function saveEmployee() {
         department: document.getElementById("department").value
     };
 
-    await fetch("/employees", {
+    await fetch("/employees/saveEmp", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -30,7 +30,7 @@ async function saveEmployee() {
 // Fetch employees from backend
 async function loadEmployees() {
 
-    const response = await fetch("/employees");
+    const response = await fetch("/employees/getAllEmp");
 
     const employees = await response.json();
 
