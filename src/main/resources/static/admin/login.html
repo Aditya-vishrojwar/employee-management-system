@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- ADMIN LOGIN -->
+    <div id="adminLogin">
+
+        <button class="back-btn" onclick="goHome()">
+            ← Back
+        </button>
+
+
+        <h2>Admin Login</h2>
+
+        <input
+                type="text"
+                id="adminUser"
+                placeholder="Username">
+
+        <input
+                type="password"
+                id="adminPass"
+                placeholder="Password">
+
+        <button onclick="loginAdmin()">
+            Login
+        </button>
+
+    </div>
+
+</div>
+
+<script src="login.js"></script>
+</body>
+</html>

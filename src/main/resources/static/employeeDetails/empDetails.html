@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="empDetails.css">
+</head>
+<body>
+
+<div class="container">
+
+
+    <!-- EMPLOYEE FORM -->
+    <div id="userForm" class="hidden">
+
+        <button class="back-btn" onclick="goHome()">
+            ← Back
+        </button>
+
+
+        <h2>Employee Details</h2>
+
+        <form id="employeeForm">
+
+            <input
+                    type="text"
+                    id="name"
+                    placeholder="Employee Name"
+                    required>
+
+            <input
+                    type="email"
+                    id="email"
+                    placeholder="Employee Email"
+                    required>
+
+            <input
+                    type="text"
+                    id="department"
+                    placeholder="Department"
+                    required>
+
+            <button type="submit">
+                Submit
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="empDetails.js"></script>
+</body>
+</html>
