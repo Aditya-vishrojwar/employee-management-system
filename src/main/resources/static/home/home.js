@@ -3,7 +3,7 @@ function goHome() {
 }
 
 function showSignupForm() {
-    window.location.href = "../user/signUp.html";
+    window.location.href = "../user/signup.html";
 }
 
 function showUserLogin() {
