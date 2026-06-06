@@ -10,16 +10,7 @@ h1{
     text-align:center;
 }
 
-.add-btn{
-    background:#28a745;
-    color:white;
-    padding:10px 20px;
-    border:none;
-    border-radius:5px;
-    margin-bottom:20px;
-}
-
-.update-btn{
+ .update-btn{
     background:#0d6efd;
     color:white;
     border:none;
@@ -45,3 +36,25 @@ th,td{
     border-bottom:1px solid #ddd;
     text-align:left;
 }
+
+.add-btn,
+.home-btn {
+    height: 45px;
+    padding: 0 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.add-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.home-btn {
+    background-color: #28a745;
+    color: white;
+}
+
