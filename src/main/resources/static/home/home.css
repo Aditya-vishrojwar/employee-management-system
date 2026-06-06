@@ -1,0 +1,67 @@
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+    margin:0;
+    padding:0;
+}
+
+.container{
+    width:80%;
+    max-width:900px;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+h1{
+    text-align:center;
+}
+
+
+.top-bar{
+    text-align:right;
+}
+
+.signup-btn{
+    background:#28a745;
+    padding:8px 15px;
+    font-size:12px;
+}
+
+.signup-btn:hover{
+    background:#218838;
+}
+
+.button-container{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-top:40px;
+}
+
+.button-container button{
+    width:180px;
+    height:50px;
+}
+
+button{
+    padding:10px 20px;
+    border:none;
+    border-radius:5px;
+    background:#007bff;
+    color:white;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0056b3;
+}
+
+
+
+
+
+
+

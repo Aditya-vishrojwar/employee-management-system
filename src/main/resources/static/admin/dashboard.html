@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+<div class="container">
+
+    <h1>Employee Management System</h1>
+
+    <button class="add-btn" onclick="addEmployee()">
+        Add Employee
+    </button>
+
+    <table>
+
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Department</th>
+            <th>Operation</th>
+        </tr>
+        </thead>
+
+        <tbody id="employeeTable">
+
+        </tbody>
+
+    </table>
+
+</div>
+<script src="dashboard.js"></script>
+</body>
+</html>
