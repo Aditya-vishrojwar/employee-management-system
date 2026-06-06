@@ -1,7 +1,16 @@
 
 // Navigation
 function goHome(){
-        window.location.href = "../home/home.html";
+ const role = localStorage.getItem("role");
+
+        if (role === "admin") {
+            // Admin logic
+            window.location.href = "../admin/dashboard.html";
+        } else {
+            // User logic
+            window.location.href = "../home/home.html";
+        }
+
 }
 
 // Employee Form
