@@ -1,3 +1,7 @@
+function goHome(){
+     const role = localStorage.getItem("role");
+     window.location.href = "../home/home.html";
+}
 
 function loginAdmin(){
 
