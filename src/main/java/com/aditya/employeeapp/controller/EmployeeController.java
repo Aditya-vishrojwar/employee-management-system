@@ -24,4 +24,10 @@ public class EmployeeController {
     public List<Employee> getAllEmployees() {
         return employeeRepository.findAll();
     }
+
+    @DeleteMapping("/deleteEmp/{id}")
+    public String deleteEmployee(@PathVariable Long id) {
+        employeeRepository.deleteById(id);
+        return "Employee Deleted Successfully";
+    }
 }
