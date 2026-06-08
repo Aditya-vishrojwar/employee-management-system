@@ -47,7 +47,7 @@ async function loadEmployees() {
                 <td>${emp.email}</td>
                 <td>${emp.department}</td>
                 <td>
-                    <button class="update-btn">Update</button>
+                    <button class="update-btn" onclick="updateEmployee(${emp.id})">Update</button>
                     <button class="delete-btn" onclick="deleteEmployee(${emp.id})">Delete</button>
                 </td>
             </tr>
@@ -80,6 +80,37 @@ async function deleteEmployee(id) {
     } else {
 
         alert("Failed to delete employee");
+    }
+}
+
+async function updateEmployee(id) {
+
+    const name = prompt("Enter new name:");
+    const email = prompt("Enter new email:");
+    const department = prompt("Enter new department:");
+
+    const employee = {
+        name: name,
+        email: email,
+        department: department
+    };
+
+    const response = await fetch(
+        `/employees/updateEmp/${id}`,
+        {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(employee)
+        }
+    );
+
+    if (response.ok) {
+        alert("Employee Updated Successfully");
+        loadEmployees();
+    } else {
+        alert("Update Failed");
     }
 }
 
