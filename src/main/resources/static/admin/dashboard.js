@@ -48,11 +48,39 @@ async function loadEmployees() {
                 <td>${emp.department}</td>
                 <td>
                     <button class="update-btn">Update</button>
-                    <button class="delete-btn">Delete</button>
+                    <button class="delete-btn" onclick="deleteEmployee(${emp.id})">Delete</button>
                 </td>
             </tr>
         `;
     });
+}
+
+async function deleteEmployee(id) {
+
+    const confirmDelete =
+        confirm("Are you sure you want to delete this employee?");
+
+    if (!confirmDelete) {
+        return;
+    }
+
+    const response = await fetch(
+        `/employees/deleteEmp/${id}`,
+        {
+            method: "DELETE"
+        }
+    );
+
+    if (response.ok) {
+
+        alert("Employee deleted successfully");
+
+        loadEmployees(); // Refresh table
+
+    } else {
+
+        alert("Failed to delete employee");
+    }
 }
 
 function addEmployee() {
