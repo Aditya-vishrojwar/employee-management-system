@@ -16,7 +16,5 @@ public class SignUpController {
     @PostMapping(value = "signUp")
     public void signUp(@RequestBody EmpSignUp signUp){
         signUpRepository.save(signUp);
-
     }
-
 }
